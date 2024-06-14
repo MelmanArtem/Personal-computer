@@ -16,7 +16,7 @@ body {
 img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     flex-shrink: 0;
 }
 
@@ -112,7 +112,7 @@ input {
 
 .main-display {
     padding-top: 27rem;
-    padding-bottom: 22.8rem;
+    padding-bottom: 24rem;
 }
 
 .main-display .container {
@@ -125,6 +125,8 @@ input {
 	top: 0;
 	left: 0;
 	z-index: 1;
+	width: 100%;
+	height: 80%;
 }
 
 .main-display__header {
@@ -170,7 +172,7 @@ input {
 }
 
 .course {
-    padding-top: 100px;
+    padding-top: 12rem;
 }
 
 .course__wrap {
@@ -634,58 +636,98 @@ progress::-moz-progress-value {
 }
 
 /*сетка*/
+@media (max-width: 2100px) {
+	.main-display__background {
+			height: 87%;
+		}
+}
+@media (max-width: 1800px) {
+	.main-display__background {
+		height: 85%;
+	}
+}
 @media (max-width: 108em) {
-    html {
-        font-size: 9px;
-    }
+	html {
+		font-size: 9px;
+	}
+	.main-display__background {
+		height: 84%;
+	}
 }
 
 @media (max-width: 105em) {
-    html {
-        font-size: 8.75px;
-    }
+	html {
+		font-size: 8.75px;
+	}
+	.main-display__background {
+		height: 83%;
+	}
 }
 
 @media (max-width: 91.5em) {
-    html {
-        font-size: 7.9px;
-    }
+	html {
+		font-size: 7.9px;
+	}
+	.main-display__background {
+		height: 82%;
+	}
 }
 
 @media (max-width: 91em) {
-    html {
-        font-size: 8.4px;
-    }
+	html {
+		font-size: 8.4px;
+	}
+	.main-display__background {
+		height: 81%;
+	}
 }
 
 @media (max-width: 90em) {
-    html {
-        font-size: 7.9px;
-    }
+	html {
+		font-size: 7.9px;
+	}
+	.main-display__background {
+		height: 80%;
+	}
 }
 
 @media (max-width: 80em) {
-    html {
-        font-size: 7.2px
-    }
+	html {
+		font-size: 7.2px
+	}
+	.main-display__background {
+		height: 73%;
+	}
 }
 
 @media (max-width: 72em) {
-    html {
-        font-size: 6.5px;
-    }
+	html {
+		font-size: 6.5px;
+	}
+	.container {
+		width: 140rem;
+	}
+	.main-display__background {
+		height: 65%;
+	}
 }
 
 @media (max-width: 64em) {
-    html {
-        font-size: 5.5px;
-    }
+	html {
+		font-size: 5.5px;
+	}
+	.main-display__background {
+		height: 46%;
+	}
 }
 
 @media (max-width: 48em) {
-    html {
-        font-size: 10px;
-    }
+	html {
+		font-size: 10px;
+	}
+	.main-display__background {
+		height: 55%;
+	}
 }
 
 @media (max-width: 44em) {
