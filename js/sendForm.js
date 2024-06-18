@@ -13,8 +13,18 @@ const sendForm = () => {
 			phone: tel.value,
 			email: email.value
 		}
-
-		console.log(sendObj);
+		fetch('https://jsonplaceholder.typicode.com/posts', {
+			method: 'POST',
+			body: JSON.stringify(sendObj),
+			headers: {
+				'Content-type': 'application/json; charset=UTF-8',
+			},
+		})
+			.then((response) => response.json())
+			.then((json) => console.log(json))
+			.finally(() => {
+				console.log('Clear form');
+			})
 	})
 }
 
